@@ -4,7 +4,7 @@ library(geosphere)
 library(sf)
 library(dplyr)
 
-source("c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/rCode/findMinDist.R")
+source("closestPoint/rCode/findMinDist.R")
 
 #sourceData is the 25mx25m CSV with whole taiwan data
 
