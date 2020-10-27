@@ -4,17 +4,9 @@ library(geosphere)
 library(sf)
 library(dplyr)
 
-source("c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/rCode/findMinDist.R")
-source("c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/rCode/scanExport.R")
+source("findMinDist.R")
+source("scanExport.R")
 #################
-#sourceDataDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/tw700.csv"
-
-#targetDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/test/L700/"
-#tempDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/test/pending/"
-#outDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/test/output/"
-
-#successDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/test/success/"
-#failDir <- "c:/Work/Operators/TWM/MDT/phase2_itmes/closestPoint/test/fail/"
 mainMinDist = function(sourceDataDir, targetDir, tempDir, outDir, successDir, failDir){
   
   if(length(list.files(targetDir)) == 0){
